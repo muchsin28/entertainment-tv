@@ -1,10 +1,10 @@
 const Router = require("express").Router();
-const SeriesController = require("../controllers");
+const TvController = require("../controllers");
 
-Router.get("/", SeriesController.getList);
-Router.get("/:id", SeriesController.getById);
-Router.post("/", SeriesController.create);
-Router.patch("/:id", SeriesController.update);
-Router.delete("/:id", SeriesController.delete);
+Router.get("/", TvController.getList);
+Router.get("/:id", TvController.getById);
+Router.post("/", TvController.create);
+Router.patch("/:id", TvController.update);
+Router.delete("/:id", TvController.delete);
 
 module.exports = Router;
